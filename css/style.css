@@ -17,12 +17,12 @@ section + section {
 }
 
 .hero {
-  background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-  color: white;
+  background: url('images/pincs.jpg') no-repeat center center/cover;
   text-shadow: 1px 1px 5px black;
   padding: 6rem 2rem;
   min-height: 100vh; /* Ensure full-screen height for the hero section */
 }
+
 
 
 .section-title {
@@ -48,3 +48,15 @@ section + section {
 .nav-link:hover {
   color: #0b6623;
 }
+.list-group-item {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically align items */
+}
+
+.list-group-item img {
+  width: 30px; /* Adjust the size of the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Space between image and text */
+}
+
+
