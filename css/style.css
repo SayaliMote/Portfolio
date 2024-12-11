@@ -166,3 +166,22 @@ section + section {
   font-size: 48px; 
   pointer-events: none; 
 }
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none; /* Removes the default list styling */
+  padding: 0;
+}
+
+li {
+  padding: 5px 0; /* Adds vertical padding for better readability */
+  font-size: 16px; /* Optional: Adjusts the font size */
+}
