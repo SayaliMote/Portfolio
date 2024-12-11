@@ -113,7 +113,7 @@ section + section {
 }
 
 .progress-bar {
-  background: linear-gradient(to right, #4caf50, #8bc34a);
+  background: linear-gradient(to right, #4caf50);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: width 2s ease;
 }
@@ -184,4 +184,73 @@ ul {
 li {
   padding: 5px 0; /* Adds vertical padding for better readability */
   font-size: 16px; /* Optional: Adjusts the font size */
+}
+
+.carousel-item img {
+  height: 200px; /* Fixed height or make it responsive as needed */
+  object-fit: cover; /* Ensures the image covers the area nicely without stretching */
+}
+
+#accomplishments {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.card-deck {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 48%; /* Responsive width */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #0056b3;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+.logos {
+  display: flex;               /* Aligns logos in a row */
+  justify-content: center;     /* Centers logos horizontally */
+  align-items: center;         /* Centers logos vertically */
+  overflow-x: auto;            /* Enables horizontal scrolling */
+  padding: 20px 0;             /* Adds some vertical padding for spacing */
+  margin-top: 20px;            /* Adds space between the logos and the text above */
+}
+
+.logo {
+  height: 50px;                /* Restricts the logo height */
+  margin-right: 20px;          /* Adds space between logos */
+  opacity: 0.7;                /* Reduces opacity to make it less prominent */
+  transition: opacity 0.3s;    /* Smooth transition for mouse hover effects */
+}
+
+.logo:last-child {
+  margin-right: 0;             /* Removes margin from the last logo */
+}
+
+.logo:hover {
+  opacity: 1;                  /* Full opacity on hover to highlight the logo */
 }

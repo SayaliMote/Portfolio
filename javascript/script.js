@@ -54,3 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.querySelectorAll('.interests-list li, .language-list li').forEach(item => {
+    item.addEventListener('click', () => {
+        alert('You clicked on ' + item.textContent);
+    });
+});
