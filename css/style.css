@@ -39,6 +39,7 @@ section + section {
 
 .navbar {
   background-color: white;
+  border-bottom: 2px solid #ccc;
 }
 
 .nav-link {
@@ -59,4 +60,109 @@ section + section {
   margin-right: 10px; /* Space between image and text */
 }
 
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
+.skill {
+  flex: 1;  /* Each skill will take equal width */
+  margin-right: 10px;  /* Spacing between skills */
+}
+
+.skill:last-child {
+  margin-right: 0;  /* Remove margin for the last skill in a row */
+}
+
+.progress {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #4cbb17;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: width 2s;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.progress {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures the inner bar rounds properly */
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: width 2s ease;
+}
+
+/* Projects Section */
+#projects .container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: space-around; /* Distributes space around items */
+}
+
+/* Individual Project Card Styling */
+.project-card {
+  flex: 1 1 45%; /* Flex-grow, flex-shrink, flex-basis */
+  margin: 10px; /* Provides spacing between cards */
+  max-width: 600px; /* Maximum width of each card */
+}
+
+@media (max-width: 768px) {
+  .project-card {
+      flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}
+
+.project-card img {
+  width: 100%;  /* Ensure the image takes up the full width of the card */
+  height: 200px; /* Set a fixed height or make it responsive based on your design */
+  object-fit: cover; /* Cover the frame without distorting the aspect ratio */
+  object-position: center; /* Center the image within the frame */
+  border-radius: 5px; /* Optional: Adds rounded corners if needed */
+}
+
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  display: block;
+}
+
+.bi-play-circle-fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 48px; 
+  pointer-events: none; 
+}
