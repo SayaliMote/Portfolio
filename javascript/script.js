@@ -59,3 +59,50 @@ document.querySelectorAll('.interests-list li, .language-list li').forEach(item 
         alert('You clicked on ' + item.textContent);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const logos = document.querySelector('.logos');
+    let isScrolling = false;
+    let speed = 1; // Speed of the scroll
+
+    function startScroll() {
+        isScrolling = true;
+        scrollStep();
+    }
+
+    function scrollStep() {
+        if (!isScrolling) return;
+        
+        // Check if the scroll has reached the right end of the element
+        if (logos.scrollLeft >= logos.scrollWidth - logos.clientWidth) {
+            // Reset scroll to the start
+            logos.scrollLeft = 0;
+        } else {
+            // Continue scrolling
+            logos.scrollBy(speed, 0);
+        }
+        
+        requestAnimationFrame(scrollStep);
+    }
+
+    function stopScroll() {
+        isScrolling = false;
+    }
+
+    // Optionally add mouseover to stop scrolling
+    logos.addEventListener('mouseover', stopScroll);
+    logos.addEventListener('mouseout', startScroll);
+
+    startScroll(); // Start the auto-scroll
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.timeline-item .expand');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const content = this.nextElementSibling; // the div.content
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
+

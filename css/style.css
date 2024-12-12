@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif; /* A more modern font */
+  line-height: 1.6; /* Improved readability */
+  color: #333; /* Softer color for text */
 }
-
 section {
   padding: 4rem 2rem;
   display: flex;
@@ -17,14 +17,84 @@ section + section {
 }
 
 .hero {
-  background: url('images/pincs.jpg') no-repeat center center/cover;
+  color: white;
   text-shadow: 1px 1px 5px black;
-  padding: 6rem 2rem;
-  min-height: 100vh; /* Ensure full-screen height for the hero section */
+  padding: 6rem 2rem; /* Adjust padding as needed */
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center; /* Keeps content vertically centered */
+  justify-content: flex-start; /* Aligns content to the left */
 }
 
+.container {
+  text-align: left; /* Aligns text to the left */
+  width: 100%; /* Ensures the container uses full width for alignment */
+  max-width: 1200px; /* Optional: max width for content area */
+  padding-left: 20px; /* Adds padding to avoid text touching the edge */
+}
 
+.logo-img {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 20px;
+}
 
+.display-3 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.btn-success {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #367c10;
+}
+
+.btn-success:hover {
+  background-color: #367c10;
+}
+
+@media (max-width: 768px) {
+  .display-3 {
+      font-size: 3rem;
+  }
+  .lead {
+      font-size: 1.2rem;
+  }
+  .btn-success {
+      font-size: 1rem;
+  }
+}
+
+.btn-primary:hover {
+  background-color: #367c10; /* Darker green on hover */
+}
+.btn-primary {
+  background-color: #4cbb17; /* Custom green color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+.logo-img {
+  padding-left: -10px;
+  padding-bottom: -10px;
+}
+
+.logo-img:hover {
+  transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -49,6 +119,7 @@ section + section {
 .nav-link:hover {
   color: #0b6623;
 }
+
 .list-group-item {
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Vertically align items */
@@ -101,7 +172,7 @@ section + section {
 .skill p {
   font-size: 1rem;
   font-weight: bold;
-  color: #555;
+  color:white;
   margin-bottom: 5px;
 }
 
@@ -186,10 +257,7 @@ li {
   font-size: 16px; /* Optional: Adjusts the font size */
 }
 
-.carousel-item img {
-  height: 200px; /* Fixed height or make it responsive as needed */
-  object-fit: cover; /* Ensures the image covers the area nicely without stretching */
-}
+
 
 #accomplishments {
   background-color: #f9f9f9;
@@ -236,14 +304,13 @@ li {
   justify-content: center;     /* Centers logos horizontally */
   align-items: center;         /* Centers logos vertically */
   overflow-x: auto;            /* Enables horizontal scrolling */
-  padding: 20px 0;             /* Adds some vertical padding for spacing */
-  margin-top: 20px;            /* Adds space between the logos and the text above */
+          /* Adds space between the logos and the text above */
 }
 
 .logo {
-  height: 50px;                /* Restricts the logo height */
-  margin-right: 20px;          /* Adds space between logos */
-  opacity: 0.7;                /* Reduces opacity to make it less prominent */
+  height: 50;  
+  margin-top: 50px;              /* Restricts the logo height */
+  margin-right: 20px;          /* Adds space between logos */             /* Reduces opacity to make it less prominent */
   transition: opacity 0.3s;    /* Smooth transition for mouse hover effects */
 }
 
@@ -251,6 +318,176 @@ li {
   margin-right: 0;             /* Removes margin from the last logo */
 }
 
-.logo:hover {
-  opacity: 1;                  /* Full opacity on hover to highlight the logo */
+.skills-container h2 {
+  text-align: center;
+  margin-top: 20px;
 }
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skill {
+  width: 100px; /* Adjust size as necessary */
+  height: 120px; /* Adjust size as necessary */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.skill img {
+  width: 50%; /* Adjust based on actual icon size */
+  height: auto;
+}
+
+.skill p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.skill_container {
+  background: white;
+  margin: 20px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.skill_container_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.skills_type_title{
+  font-size: 1.5rem;
+  color: #0b6623;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 5px;
+}
+
+.skillGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.skillBox {
+  width: 180px; /* Increased width for better layout */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillBox:hover {
+  transform: translateY(-5px);
+}
+
+.skillBox p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .skillGroup {
+      justify-content: center;
+  }
+
+  .skillBox {
+      width: 140px;
+  }
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+
+
+.skill p {
+  font-size: 16px;
+  color: #333;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.expand {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.content {
+  background-color: #f9f9f9;
+  border-left: 2px solid greenyellow;
+  padding: 10px;
+  margin-top: 5px;
+  display: none; /* Initially hidden */
+}
+
