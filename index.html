@@ -54,12 +54,13 @@
 
 <!-- Hero Section -->
 <section class="hero" id="home" style="background: url('images/hero_section.jpeg') no-repeat center center/cover; color: white; text-shadow: 1px 1px 5px black; min-height: 100vh; width: 100vw; text-align: left;">
-    <div class="container text-left" style="padding-top: 15em; text-align: left;">
+    <div class="container text-left" style="padding-top: 15em;">
         <img src="images/sayali_pic.jpg" alt="Sayali Mote" class="logo-img">
         <h1 class="display-3">Sayali Mote</h1>
         <p class="lead">B.Sc. in Computing with Software Development</p>
         <a href="/cv/Sayali_Mote_CV.pdf" class="btn btn-success" download="Sayali_Mote_CV.pdf">Download My CV</a>
-        
+        <a class="btn btn-success btn-light" href="#about" style="color:white; background-color:#379E9E;"><b>Learn more about me</b></a>
+        <a class="btn btn-success btn-light" href="#experience" style="background-color: #92569C; color: white;"><b>See my work</b></a>
         <!-- LinkedIn Logo below the button -->
         <div style="margin-top: 1em;">
             <a href="https://www.linkedin.com/in/sayalisunilmote/" target="_blank">
@@ -142,6 +143,10 @@
                 <div class="box skillBox">
                     <img src="images/svelte_logo.png" alt="Svelte" style="width:67px; height:67px;">
                     <p>Svelte</p>
+                </div>
+                <div class="box skillBox">
+                    <img src="images/node_js_logo.jpeg" alt="Node.js" style="width:67px; height:67px;">
+                    <p>Node.js</p>
                 </div>
             </div>
             <h3 class="skills_type_title">Testing Tools</h3>
@@ -478,89 +483,70 @@
     
 <!-- Projects Section -->
 <section id="projects">
-    <h2 class="skills_title" style="align-items: center;"><b>💻 Project Work</b></h2>
+    <h2><b>💻Project Work</b></h2>
     <div class="container text-center">
-        <!-- Example Project Card -->
+        
         <div class="card project-card">
-            <div class="video-thumbnail" style="cursor:pointer;">
-                <img src="images/sims_kitchen.png" alt="Play Video" class="img-fluid">
-                <i class="bi bi-play-circle-fill" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: white;"></i>
-            </div>
             <div class="card-body">
-                <h5 class="card-title" style="color: #4cbb17; cursor: pointer;" onclick="toggleInfo(this)">SIMS’s Kitchen: E-commerce Website</h5>
-                <div class="additional-info" style="display:none;">
-                    <h6 style="color: #0b6623;">Description:</h6>
-                    <p class="card-text">Project details...</p>
-                    <h6 style="color: #0b6623;">Challenges faced:</h6>
-                    <p>Choosing a hosting platform</p>
-                    <h6 style="color: #0b6623;">Technologies & Tools used:</h6>
-                    <div class="skillGroup">
-                        <div class="box skillBox">
-                            <img src="images/pytho_logo.png" alt="Python" style="width:67px; height:67px;">
-                            <p>Python</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/html_logo.png" alt="HTML" style="width:67px; height:67px;">
-                            <p>HTML</p>
-                        </div>      
-                        <div class="box skillBox">
-                            <img src="images/css_logo.png" alt="CSS" style="width:67px; height:67px;">
-                            <p>CSS</p>
-                        </div> 
-                        <div class="box skillBox">
-                            <img src="images/sql_logo.jpeg" alt="SQL" style="width:67px; height:67px;">
-                            <p>SQL</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/javascript_logo.png" alt="JavaScript" style="width:67px; height:67px;">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/django_logo.png" alt="Django" style="width:67px; height:67px;">
-                            <p>Django</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/visual_studio_code_logo.jpeg" alt="Visual Studio Code" style="width:67px; height:67px;">
-                            <p>Visual Studio Code</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/azure_logo.jpeg" alt="Azure" style="width:67px; height:67px;">
-                            <p>Azure VCS</p>
-                        </div>
-                                      
-                    </div>
+                <!-- Clickable Image that plays video -->
+                <div class="video-thumbnail" style="cursor:pointer;">
+                    <img src="images/sims_kitchen.png" alt="Play Video" class="img-fluid">
+                    <i class="bi bi-play-circle-fill" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: white;"></i>
+                </div>
+        
+                <!-- Video embed, hidden initially -->
+                <video width="100%" controls style="display:none;">
+                    <source src="videos/sayali_mote_Project_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #4cbb17;"><b>SIMS’s Kitchen: E-commerce Website</b></h5>
                     
+                    <!-- Extra content hidden by default -->
+                    <div class="extra-info">
+                        <h6 style="color: #0b6623;">Description:</h6>
+                        <p class="card-text">A team project involving the development of a fast-food e-commerce website, the feature-rich website offers a wide range of
+                            functionality, including a powerful search bar, login, logout, signup, reservation, find the nearest store, add a product review,
+                            order details, payment functionality and much more, ensuring a seamless and stress-free experience for both guests and
+                            restaurant staff.</p>
+                        <h6 style="color: #0b6623;">Challenges faced:</h6>
+                        <p>Choosing a hosting platform</p>
+                        <h6 style="color: #0b6623;">Technologies & Tools used:</h6>
+                        <p>Python, HTML, CSS, JavaScript, SQL, Django web framework, Visual Studio Code IDE, Azure Repos VCS</p>
+                    </div>
                 </div>
+                
             </div>
         </div>
+        
         <div class="card project-card">
-            <div class="video-thumbnail" style="cursor:pointer;">
-                <img src="images/sayalis_kitchen.png" alt="Play Video" class="img-fluid">
-                <i class="bi bi-play-circle-fill" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: white;"></i>
-            </div>
             <div class="card-body">
-                <h5 class="card-title" style="color: #4cbb17; cursor: pointer;" onclick="toggleInfo(this)">SIMS’s Kitchen: E-commerce Website</h5>
-                <div class="additional-info" style="display:none;">
+                <img src="images/sayalis_kitchen.png" alt="" srcset="">
+                <h5 class="card-title" style="color: #4cbb17;"><b>Sayali’s Kitchen: E-commerce Website</b></h5>
+                
+                <!-- Extra content hidden by default -->
+                <div class="extra-info">
                     <h6 style="color: #0b6623;">Description:</h6>
-                    <p class="card-text">Project details...</p>
+                    <p class="card-text">A fourth-year college project that is an upgraded version of SIM's Kitchen, with many more functionality</p>
                     <h6 style="color: #0b6623;">Challenges faced:</h6>
-                    <p>Choosing a hosting platform</p>
+                    <p>• Managing times along with full-time college work</p>
                     <h6 style="color: #0b6623;">Technologies & Tools used:</h6>
-                    <p>Python, HTML, CSS, JavaScript, SQL, Django web framework, Visual Studio Code IDE, Azure Repos VCS</p>
+                    <p>• Python, HTML, CSS, JavaScript, SQL, Django web framework, Visual Studio Code IDE, Azure Repos VCS</p>
                 </div>
             </div>
         </div>
-        <!-- More project cards can be added in similar fashion -->
+        <!-- More project cards -->
     </div>
 </section>
+
 
 
 
         
         
         <!-- More project cards -->
-    </div>
-</section>
+
 
 <!-- Experience Section -->
 <section id="experience" style="text-decoration: #0b6623;">
@@ -568,38 +554,85 @@
         <h2 class="skills_title" style="align-items: center;"><b>👩🏻‍💻 Work Experience</b></h2>
         <ul class="timeline">
             <li class="timeline-item">
-                <button class="expand"><img src="images/mastercard.png" alt="Mastercard logo"> Intern at Mastercard (Jan 2024 - July 2024)</button>
+                <button class="expand">
+                    <img src="images/mastercard.png" alt="Mastercard logo"> Intern at Mastercard (Jan 2024 - July 2024)
+                </button>
                 <div class="content">
-                    <p>Details about the role at Mastercard...</p>
+                    <h4>Intern at Mastercard: 6 months Jan 2024 to July 2024</h4>
+                        <h5>BizOps Engineer Intern – Dublin 24, Ireland</h5>
+                        <ul>
+                            <li>Completed a 6 month internship at Mastercard as a BizOps Engineer intern working in Global Customer Care (GCC)</li>
+                            <li>Automated PCF Cert pipelines and documented processes in Confluence, enhancing team efficiency and developed
+                        an automated email communication pipeline using Jenkins, improving my Groovy scripting skills.</li>
+                        <li>Integrated Docker and Playwright with USSEP applications, resolving compatibility issues and enhancing testing
+                        capabilities and built and deployed a Docker image that addressed significant software compatibility challenges.</li>
+                        <li>Delivered a comprehensive presentation on project progress and strategic direction to senior leadership and
+                        developed a “MasterCart” browser extension during a hackathon, demonstrating skill application in a collaborative
+                        environment.</li>
+                        </ul>
                 </div>
             </li>
             <li class="timeline-item">
-                <button class="expand"> <img src="images/dunnes-logo.png" alt="Dunnes logo">Sales Assistant at Dunnes Stores (Oct 2021 - Oct 2022)</button>
+                <button class="expand">
+                    <img src="images/dunnes-logo.png" alt="Dunnes logo"> Sales Assistant at Dunnes Stores (Oct 2021 - Oct 2022)
+                </button>
                 <div class="content">
-                    <p>Details about the role at Dunnes Stores...</p>
+                    <h4>Stores Sales Assistant Oct 2021 to Oct 2022</h4>
+                        <h5>Dunnes Stores- Dublin 24, Ireland</h5>
+                        <ul>
+                            <li>Improved confidence, communication, and attention to detail while demonstrating visual merchandising and
+                        interpersonal communication proficiency, providing excellent customer service.</li>
+                        <li>Maintained comprehensive product knowledge and met daily targets through strong time management and engaged
+                        customers, explained product benefits.</li>
+                    </ul>
                 </div>
             </li>
             <li class="timeline-item">
-                <button class="expand"> <img src="images/kumon-logo.jpeg" alt="Dunnes logo">Instructor at Kumon (Feb 2019 - May 2020)</button>
+                <button class="expand">
+                    <img src="images/kumon-logo.jpeg" alt="Dunnes logo"> Instructor at Kumon (Feb 2019 - May 2020)
+                </button>
                 <div class="content">
-                    <p>Instructor at Kumon (Feb 2019 - May 2020)</p>
+                    <h4>Math and English Learning Centre Instructor Feb 2019 to May 2020</h4>
+                    <h5>Kumon - Dublin 24, Ireland</h5>
+                    <ul>
+                        <li>Taught young children math problem-solving techniques and English literature, by effective communication skills.</li>
+                    <li>Collaborated as a team to explain tasks and teach problem-solving approaches.</li>
+                    <li>Learned valuable techniques from observing other instructors for future courses.</li>
+                    </ul>
                 </div>
             </li>
             <li class="timeline-item">
-                <button class="expand"> <img src="images/fidelity-logo.png" alt="Dunnes logo">1 week workshop at Fidelity (Feb 2019 - Feb 2019)</button>
+                <button class="expand">
+                    <img src="images/fidelity-logo.png" alt="Dunnes logo"> 1 week workshop at Fidelity (Feb 2019 - Feb 2019)
+                </button>
                 <div class="content">
-                    <p>Instructor at Kumon (Feb 2019 - May 2020)</p>
+                    <h4>Fidelity Investments Ireland Transition year intern Feb 2019 to Feb 2019</h4>
+                    <h5>Fidelity Investments Ireland - Dublin 24, Ireland</h5>
+                    <ul>
+                        <li>Engaged in a comprehensive one-week workshop that provided valuable exposure to a real-time software
+                        development team comprising diverse roles such as Software Developer, QA, Business Analyst, and more.</li>
+                    </ul>
                 </div>
             </li>
             <li class="timeline-item">
-                <button class="expand"> <img src="images/SAP-logo.jpeg" alt="Dunnes logo">1 week workshop at SAP (Nov 2018 - Nov 2018)</button>
+                <button class="expand">
+                    <img src="images/SAP-logo.jpeg" alt="Dunnes logo"> 1 week workshop at SAP (Nov 2018 - Nov 2018)
+                </button>
                 <div class="content">
-                    <p>Instructor at Kumon (Feb 2019 - May 2020)</p>
+                    <h4>SAP Transition year intern Nov 2018 to Nov 2018</h4>
+                    <h5>SAP - Dublin 24, Ireland</h5>
+                    <ul>
+                        <li>One-week workshop introduced me to computing and office environments.</li>
+                        <li>Demonstrated leadership and administrative abilities by handling various office-based situations and assuming
+                            multiple roles.</li>
+                    </ul>
                 </div>
             </li>
         </ul>
     </div>
 </section>
+
+
 
 <section id="accomplishments">
         <div class="container">
@@ -676,7 +709,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel"><b>Contact Information</b></h5>
+                    <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -697,7 +730,7 @@
     
     <button type="submit" class="btn btn-primary">Send Message</button>
     <div class="mb-3">
-        <label for="email" class="form-label"><b>or Call me on: 085-1659237</b></label>
+        <label for="email" class="form-label">or Call me on: 085-1659237</label>
     </div>
 </form>
 

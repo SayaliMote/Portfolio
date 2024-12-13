@@ -11,7 +11,7 @@ section {
   flex-direction: column;
 }
 
-
+/* spacing between sections */
 section + section {
   margin-top: 2rem;
 }
@@ -19,18 +19,19 @@ section + section {
 .hero {
   color: white;
   text-shadow: 1px 1px 5px black;
-  padding: 6rem 2rem;
+  padding: 6rem 2rem; 
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  align-items: center; 
   justify-content: flex-start; 
 }
 
 .container {
   text-align: left; 
   width: 100%; 
-  max-width: 1200px;
-  padding-left: 20px; 
+  max-width: 1200px; 
+  padding-left: 20px;
 }
 
 .logo-img {
@@ -77,10 +78,10 @@ section + section {
 }
 
 .btn-primary:hover {
-  background-color: #367c10; /* Darker green on hover */
+  background-color: #367c10; 
 }
 .btn-primary {
-  background-color: #4cbb17; /* Custom green color */
+  background-color: #4cbb17; 
   border: none;
   padding: 10px 20px;
   font-size: 1.2rem;
@@ -92,7 +93,7 @@ section + section {
 }
 
 .logo-img:hover {
-  transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  transform: scale(1.1); 
 }
 .section-title {
   font-size: 2.5rem;
@@ -120,14 +121,14 @@ section + section {
 }
 
 .list-group-item {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Vertically align items */
+  display: flex; 
+  align-items: center; 
 }
 
 .list-group-item img {
-  width: 30px; /* Adjust the size of the image */
-  height: auto; /* Maintain the aspect ratio */
-  margin-right: 10px; /* Space between image and text */
+  width: 30px; 
+  height: auto; 
+  margin-right: 10px; 
 }
 
 .skill-row {
@@ -137,12 +138,12 @@ section + section {
 }
 
 .skill {
-  flex: 1;  /* Each skill will take equal width */
-  margin-right: 10px;  /* Spacing between skills */
+  flex: 1;  
+  margin-right: 10px;  
 }
 
 .skill:last-child {
-  margin-right: 0;  /* Remove margin for the last skill in a row */
+  margin-right: 0;  
 }
 
 .progress {
@@ -179,7 +180,7 @@ section + section {
   background-color: #f0f0f0;
   border-radius: 20px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
-  overflow: hidden; /* Ensures the inner bar rounds properly */
+  overflow: hidden; 
 }
 
 .progress-bar {
@@ -188,32 +189,30 @@ section + section {
   transition: width 2s ease;
 }
 
-/* Projects Section */
 #projects .container {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  justify-content: space-around; /* Distributes space around items */
+  flex-wrap: wrap; 
+  justify-content: space-around; 
 }
 
-/* Individual Project Card Styling */
 .project-card {
-  flex: 1 1 45%; /* Flex-grow, flex-shrink, flex-basis */
-  margin: 10px; /* Provides spacing between cards */
-  max-width: 600px; /* Maximum width of each card */
+  flex: 1 1 45%; 
+  margin: 10px; 
+  max-width: 600px; 
 }
 
 @media (max-width: 768px) {
   .project-card {
-      flex: 1 1 100%; /* Full width on smaller screens */
+      flex: 1 1 100%; 
   }
 }
 
 .project-card img {
-  width: 100%;  /* Ensure the image takes up the full width of the card */
-  height: 200px; /* Set a fixed height or make it responsive based on your design */
-  object-fit: cover; /* Cover the frame without distorting the aspect ratio */
-  object-position: center; /* Center the image within the frame */
-  border-radius: 5px; /* Optional: Adds rounded corners if needed */
+  width: 100%;  
+  height: 200px; 
+  object-fit: cover; 
+  object-position: center; 
+  border-radius: 5px; 
 }
 
 .video-thumbnail {
@@ -247,13 +246,13 @@ h3 {
 }
 
 ul {
-  list-style-type: none; /* Removes the default list styling */
+  list-style-type: none; 
   padding: 0;
 }
 
 li {
-  padding: 5px 0; /* Adds vertical padding for better readability */
-  font-size: 16px; /* Optional: Adjusts the font size */
+  padding: 5px 0; 
+  font-size: 16px; 
 }
 
 
@@ -280,7 +279,7 @@ li {
   border: 1px solid #ddd;
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  width: 48%; /* Responsive width */
+  width: 48%; 
 }
 
 .card-body {
@@ -295,26 +294,25 @@ li {
 
 @media (max-width: 768px) {
   .card {
-      width: 100%; /* Full width on smaller screens */
+      width: 100%; 
   }
 }
 .logos {
-  display: flex;               /* Aligns logos in a row */
-  justify-content: center;     /* Centers logos horizontally */
-  align-items: center;         /* Centers logos vertically */
-  overflow-x: auto;            /* Enables horizontal scrolling */
-          /* Adds space between the logos and the text above */
+  display: flex;               
+  justify-content: center;     
+  align-items: center;    
+  overflow-x: auto;          
 }
 
 .logo {
   height: 50;  
-  margin-top: 50px;              /* Restricts the logo height */
-  margin-right: 20px;          /* Adds space between logos */             /* Reduces opacity to make it less prominent */
-  transition: opacity 0.3s;    /* Smooth transition for mouse hover effects */
+  margin-top: 50px;            
+  margin-right: 20px;                  
+  transition: opacity 0.3s;    
 }
 
 .logo:last-child {
-  margin-right: 0;             /* Removes margin from the last logo */
+  margin-right: 0;             
 }
 
 .skills-container h2 {
@@ -330,20 +328,20 @@ li {
 }
 
 .skill {
-  width: 100px; /* Adjust size as necessary */
-  height: 120px; /* Adjust size as necessary */
+  width: 100px; 
+  height: 120px; 
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #f0f0f0; /* Light grey background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background-color: #f0f0f0; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .skill img {
-  width: 50%; /* Adjust based on actual icon size */
+  width: 50%; 
   height: auto;
 }
 
@@ -387,7 +385,7 @@ li {
 }
 
 .skillBox {
-  width: 180px; /* Increased width for better layout */
+  width: 180px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -488,5 +486,42 @@ body {
   padding: 10px;
   margin-top: 5px;
   display: none; /* Initially hidden */
+}
+
+.timeline-item .content {
+  display: none;
+}
+
+.timeline-item:hover .content {
+  display: block;
+}
+
+.timeline-item .content {
+  transition: all 0.3s ease;
+}
+
+.timeline-item .expand {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-item .expand img {
+  margin-right: 10px;
+}
+
+.card .extra-info {
+  display: none;
+}
+
+.card:hover .extra-info {
+  display: block;
+}
+
+.card .extra-info {
+  transition: all 0.3s ease;
 }
 
