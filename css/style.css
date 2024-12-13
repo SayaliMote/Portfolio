@@ -25,6 +25,7 @@ section + section {
   display: flex;
   align-items: center; 
   justify-content: flex-start; 
+  background: url('images/hero_section.jpeg') no-repeat center center/cover;
 }
 
 .container {
@@ -36,7 +37,7 @@ section + section {
 
 .logo-img {
   width: 150px;
-  height: 100px;
+  height: 60Fpx;
   margin-bottom: 20px;
 }
 
@@ -109,16 +110,20 @@ section + section {
 
 .navbar {
   background-color: white;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1px solid #ccc; /* Make the border thinner */
+  padding: 5px 1px; /* Reduce the padding to make the navbar slimmer */
+  height: 82px; /* Make the navbar shorter */
 }
 
 .nav-link {
   color: #4cbb17;
+  padding: 5px 10px; /* Reduce the padding around the links */
 }
 
 .nav-link:hover {
   color: #0b6623;
 }
+
 
 .list-group-item {
   display: flex; 
@@ -306,9 +311,8 @@ li {
 
 .logo {
   height: 50;  
-  margin-top: 50px;            
-  margin-right: 20px;                  
-  transition: opacity 0.3s;    
+  margin-top: px;            
+  margin-right: 20px;                      
 }
 
 .logo:last-child {
