@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x/css/all.min.css">
+    
     <!-- Example of defining SVG icons inline -->
 <svg style="display: none;">
     <symbol id="Bash-Light" viewBox="0 0 24 24">
@@ -33,14 +34,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#accomplishments">Accomplishments & Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><b>About</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills"><b>Skills</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education"><b>Education</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><b>Projects</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience"><b>Experience</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accomplishments"><b>Accomplishments & Certifications</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests"><b>Interests & Languages</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><b>Contact</b></a></li>
                 </ul>
             </div>
         </div>
@@ -53,13 +54,21 @@
 
 <!-- Hero Section -->
 <section class="hero" id="home" style="background: url('images/hero_section.jpeg') no-repeat center center/cover; color: white; text-shadow: 1px 1px 5px black; min-height: 100vh; width: 100vw; text-align: left;">
-    <div class="container text-left" style="padding-top: 15em; ">
+    <div class="container text-left" style="padding-top: 15em; text-align: left;">
         <img src="images/sayali_pic.jpg" alt="Sayali Mote" class="logo-img">
         <h1 class="display-3">Sayali Mote</h1>
         <p class="lead">B.Sc. in Computing with Software Development</p>
         <a href="/cv/Sayali_Mote_CV.pdf" class="btn btn-success" download="Sayali_Mote_CV.pdf">Download My CV</a>
+        
+        <!-- LinkedIn Logo below the button -->
+        <div style="margin-top: 1em;">
+            <a href="https://www.linkedin.com/in/sayalisunilmote/" target="_blank">
+                <i class="fab fa-linkedin" style="font-size: 40px; color: white;"></i>
+            </a>
+        </div>
     </div>
 </section>
+
 
 
 
@@ -68,7 +77,7 @@
     <!-- About Section -->
     <section id="about">
         <div class="container text-center">
-            <h2 class="skills_title" style="align-items: center;">👩🏻‍💼About Me</h2>
+            <h2 class="skills_title" style="align-items: center;"><b>👩🏻‍💼About Me</b></h2>
             <p>I'm a motivated computing student with a passion for building solutions that make a difference. Through my experience in project work and internships, I've developed skills in software development, web technologies, and data analysis. I take pride in delivering quality work, managing projects effectively, and collaborating with teams to achieve shared goals.
 
                 I enjoy working closely with clients to understand their needs and turn ideas into practical outcomes. Currently pursuing a B.Sc. in Computing with Software Development at TU Dublin, I'm always looking for ways to expand my knowledge and improve my skills. I’m particularly interested in web development and data-driven projects, and I'm excited about opportunities that challenge me to learn and grow.</p>
@@ -77,7 +86,7 @@
     
     <section id="skills" class="skill_container">
         <div id="skill_inner" class="skill_container_inner">
-            <h2 class="skills_title" style="align-items: center;">🤹🏻My Skills</h2>
+            <h2 class="skills_title" style="align-items: center;"><b>🤹🏻My Skills</b></h2>
     
             <h3 class="skills_type_title">Programming Languages</h3>
             <div class="skillGroup">
@@ -143,7 +152,7 @@
                 </div>
                 
                 <div class="box skillBox">
-                    <img src="images/html_logo.png" alt="HTML" style="width:67px; height:67px;">
+                    <img src="images/pytest_logo.png" alt="HTML" style="width:67px; height:67px;">
                     <p>PyTest</p>
                 </div>
                 <div class="box skillBox">
@@ -182,6 +191,14 @@
                 <div class="box skillBox">
                     <img src="images/visual_studio_code_logo.jpeg" alt="Svelte" style="width:67px; height:67px;">
                     <p>Visual Studio Code</p>
+                </div>
+                <div class="box skillBox">
+                    <img src="images/linux_logo.jpeg" alt="Linux" style="width:67px; height:67px;">
+                    <p>Linux</p>
+                </div>
+                <div class="box skillBox">
+                    <img src="images/google_cloud_logo.jpeg" alt="Google Cloud" style="width:67px; height:67px;">
+                    <p>Google Cloud</p>
                 </div>
 
                 <h3 class="skills_type_title">Specialised Tools</h3>
@@ -253,7 +270,7 @@
     <!-- Education Section -->
     <section id="education" class="py-5">
         <div class="container text-center">
-            <h2 class="skills_title" style="align-items: center;">📚Education</h2>
+            <h2 class="skills_title" style="align-items: center;"><b>📚Education</b></h2>
     
             <!-- Bachelor Degree -->
             <div class="mb-5">
@@ -461,84 +478,86 @@
     
 <!-- Projects Section -->
 <section id="projects">
-    <h2 class="skills_title" style="align-items: center;">💻Project Work</h2>
+    <h2 class="skills_title" style="align-items: center;"><b>💻 Project Work</b></h2>
     <div class="container text-center">
-        
+        <!-- Example Project Card -->
         <div class="card project-card">
+            <div class="video-thumbnail" style="cursor:pointer;">
+                <img src="images/sims_kitchen.png" alt="Play Video" class="img-fluid">
+                <i class="bi bi-play-circle-fill" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: white;"></i>
+            </div>
             <div class="card-body">
-                <!-- Clickable Image that plays video -->
-                <div class="video-thumbnail" style="cursor:pointer;">
-                    <img src="images/sims_kitchen.png" alt="Play Video" class="img-fluid">
-                    <i class="bi bi-play-circle-fill" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: white;"></i>
-                </div>
-        
-                <!-- Video embed, hidden initially -->
-                <video width="100%" controls style="display:none;">
-                    <source src="videos/sayali_mote_Project_demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                
-                <div class="card-body">
-                    <h5 class="card-title" style="color: #4cbb17;">SIMS’s Kitchen: E-commerce Website</h5>
+                <h5 class="card-title" style="color: #4cbb17; cursor: pointer;" onclick="toggleInfo(this)">SIMS’s Kitchen: E-commerce Website</h5>
+                <div class="additional-info" style="display:none;">
                     <h6 style="color: #0b6623;">Description:</h6>
-                    <p class="card-text"><div class="container mt-5">
-                        <div class="row">
-                            
-                            
+                    <p class="card-text">Project details...</p>
+                    <h6 style="color: #0b6623;">Challenges faced:</h6>
+                    <p>Choosing a hosting platform</p>
+                    <h6 style="color: #0b6623;">Technologies & Tools used:</h6>
+                    <div class="skillGroup">
+                        <div class="box skillBox">
+                            <img src="images/pytho_logo.png" alt="Python" style="width:67px; height:67px;">
+                            <p>Python</p>
                         </div>
+                        <div class="box skillBox">
+                            <img src="images/html_logo.png" alt="HTML" style="width:67px; height:67px;">
+                            <p>HTML</p>
+                        </div>      
+                        <div class="box skillBox">
+                            <img src="images/css_logo.png" alt="CSS" style="width:67px; height:67px;">
+                            <p>CSS</p>
+                        </div> 
+                        <div class="box skillBox">
+                            <img src="images/sql_logo.jpeg" alt="SQL" style="width:67px; height:67px;">
+                            <p>SQL</p>
+                        </div>
+                        <div class="box skillBox">
+                            <img src="images/javascript_logo.png" alt="JavaScript" style="width:67px; height:67px;">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="box skillBox">
+                            <img src="images/django_logo.png" alt="Django" style="width:67px; height:67px;">
+                            <p>Django</p>
+                        </div>
+                        <div class="box skillBox">
+                            <img src="images/visual_studio_code_logo.jpeg" alt="Visual Studio Code" style="width:67px; height:67px;">
+                            <p>Visual Studio Code</p>
+                        </div>
+                        <div class="box skillBox">
+                            <img src="images/azure_logo.jpeg" alt="Azure" style="width:67px; height:67px;">
+                            <p>Azure VCS</p>
+                        </div>
+                                      
                     </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card project-card">
+            <div class="video-thumbnail" style="cursor:pointer;">
+                <img src="images/sayalis_kitchen.png" alt="Play Video" class="img-fluid">
+                <i class="bi bi-play-circle-fill" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: white;"></i>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" style="color: #4cbb17; cursor: pointer;" onclick="toggleInfo(this)">SIMS’s Kitchen: E-commerce Website</h5>
+                <div class="additional-info" style="display:none;">
+                    <h6 style="color: #0b6623;">Description:</h6>
+                    <p class="card-text">Project details...</p>
                     <h6 style="color: #0b6623;">Challenges faced:</h6>
                     <p>Choosing a hosting platform</p>
                     <h6 style="color: #0b6623;">Technologies & Tools used:</h6>
                     <p>Python, HTML, CSS, JavaScript, SQL, Django web framework, Visual Studio Code IDE, Azure Repos VCS</p>
-                    <p class="card-text"></p>
-                    <div class="skillGroup-mini row">
-                        <div class="box skillBox">
-                            <img src="images/pytho_logo.png" alt="NumPy" class="toolImage">
-                            <p>Python</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/html_logo.png" alt="SciPy" class="toolImage">
-                            <p>SciPy</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/css_logo.png" alt="SciPy" class="toolImage">
-                            <p>SciPy</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/sql_logo.jpeg" alt="SciPy" class="toolImage">
-                            <p>SciPy</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/django_logo.png" alt="SciPy" class="toolImage">
-                            <p>SciPy</p>
-                        </div>
-                        <div class="box skillBox">
-                            <img src="images/v.png" alt="SciPy" class="toolImage">
-                            <p>SciPy</p>
-                        </div>
-                        <!-- Add more tools in similar divs as needed -->
-                    </div>
-                    
                 </div>
-                
             </div>
         </div>
+        <!-- More project cards can be added in similar fashion -->
+    </div>
+</section>
+
+
+
         
-        <div class="card project-card">
-            
-            <div class="card-body">
-                <img src="images/sayalis_kitchen.png" alt="" srcset="">
-                <h5 class="card-title" style="color: #4cbb17;">Sayali’s Kitchen: E-commerce Website</h5>
-                <h6 style="color: #0b6623;">Description:</h6>
-                <p class="card-text">A fourth-year college project that is an upgraded version of SIM's Kitchen, with many more functionality</p>
-                <h6 style="color: #0b6623;">Challenges faced:</h6>
-                <p>•	Managing times along with full-time college work</p>
-                <h6 style="color: #0b6623;">Technologies & Tools used:</h6>
-                <p>•	Python, HTML, CSS, JavaScript, SQL, Django web framework, Visual Studio Code IDE, Azure Repos VCS</p>
-                <p class="card-text"></p>
-            </div>
-        </div>
+        
         <!-- More project cards -->
     </div>
 </section>
@@ -546,7 +565,7 @@
 <!-- Experience Section -->
 <section id="experience" style="text-decoration: #0b6623;">
     <div class="container text-center" style="color: #0b6623;">
-        <h2 class="skills_title" style="align-items: center;">👩🏻‍💻 Work Experience</h2>
+        <h2 class="skills_title" style="align-items: center;"><b>👩🏻‍💻 Work Experience</b></h2>
         <ul class="timeline">
             <li class="timeline-item">
                 <button class="expand"><img src="images/mastercard.png" alt="Mastercard logo"> Intern at Mastercard (Jan 2024 - July 2024)</button>
@@ -584,29 +603,29 @@
 
 <section id="accomplishments">
         <div class="container">
-            <h2 class="skills_title" style="align-items: center;">🏆 Accomplishments & Certifications</h2>
+            <h2 class="skills_title" style="align-items: center;"><b>🏆 Accomplishments & Certifications</b></h2>
             
             <div class="card-deck">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title" style="color: #0b6623; text-align: center;">Professional Achievements</h5>
+                        <h5 class="card-title" style="color: #0b6623; text-align: center;"><b>Professional Achievements</b></h5>
                         <ul class="list-unstyled">
-                            <li>Won the Best Overall Winner Health Hackathon Award at the TUD Health Transformation Challenge in partnership with Tallaght University Hospital, AWS in Communities, and Tallaght Hospital, an academic partner of Trinity College Dublin</li>
-                            <li>Created and developed many multi-functional e-commerce websites.</li>
-                            <li>Received amazing grades in all course modules (all over Grade C).</li>
-                            <li>Acquired multiple certificates demonstrating self-learning capabilities and intellectual excellence.</li>
+                            <li>Won the <b>Best Overall Winner</b> Health Hackathon Award at the <b>TUD Health Transformation Challenge</b> in partnership with <b>Tallaght University Hospital</b>, <b>AWS in Communities</b>, and <b>Tallaght Hospital</b>, an academic partner of <b>Trinity College Dublin</b></li>
+                            <li>Created and developed many multi-functional <b>e-commerce websites.</b></li>
+                            <li>Received <b>amazing grades</b> in all course modules (all over Grade C).</li>
+                            <li>Acquired <b>multiple certificates</b> demonstrating self-learning capabilities and intellectual excellence.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title" style="color: #0b6623; text-align: center;">Certifications</h5>
+                        <h5 class="card-title" style="color: #0b6623; text-align: center;"><b>Certifications</b></h5>
                         <ul class="list-unstyled">
-                            <li>SAP USA Technical Consulting Virtual Internship - June 2023</li>
-                            <li>PwC Switzerland Power BI Virtual Case Experience - June 2023</li>
-                            <li>Goldman Sachs Software Engineering Virtual Experience Program - July 2023</li>
-                            <li>Clifford Chance Cyber Security Global Virtual Internship - July 2023</li>
-                            <li>Microsoft AI 6 weeks course - December 2023</li>
+                            <li><b>SAP USA</b> Technical Consulting Virtual Internship - June 2023</li>
+                            <li><b>PwC Switzerland</b> Power BI Virtual Case Experience - June 2023</li>
+                            <li><b>Goldman Sachs</b> Software Engineering Virtual Experience Program - July 2023</li>
+                            <li><b>Clifford Chance</b> Cyber Security Global Virtual Internship - July 2023</li>
+                            <li><b>Microsoft</b> AI 6 weeks course - December 2023</li>
                         </ul>
                     </div>
                 </div>
@@ -614,38 +633,40 @@
         </div>
     </section>
     
-    <div class="container text-center">
-        <div class="row">
-            <!-- Interests Section -->
-            <div class="col-md-6">
-                <h2>🎨Interests</h2>
-                <ul>
-                    <li>Chess</li>
-                    <li>Photography</li>
-                    <li>Badminton</li>
-                    <li>Painting and Drawing</li>
-                    <li>Writing</li>
-                </ul>
-            </div>
-            <!-- Languages Section -->
-            <div class="col-md-6">
-                <h2>🌐Languages</h2>
-                <ul>
-                    <li>English</li>
-                    <li>German</li>
-                    <li>Hindi</li>
-                    <li>Marathi</li>
-                    <li>Irish</li>
-                </ul>
+    <section id="interests">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Interests Section -->
+                <div class="col-md-6" style="text-decoration: dashed;">
+                    <h2><b>🎨Interests</b></h2>
+                    <ul>
+                        <li>Chess</li>
+                        <li>Photography</li>
+                        <li>Badminton</li>
+                        <li>Painting and Drawing</li>
+                        <li>Writing</li>
+                    </ul>
+                </div>
+                <!-- Languages Section -->
+                <div class="col-md-6">
+                    <h2><b>🌐Languages</b></h2>
+                    <ul>
+                        <li>English</li>
+                        <li>German</li>
+                        <li>Hindi</li>
+                        <li>Marathi</li>
+                        <li>Irish</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <div class="container text-center">
-            <h2 class="section-title">☎️Contact Me</h2>
+            <h2 class="skills_title" style="align-items: center;"><b>☎️Contact Me</b></h2>
+            
             <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Info</button>
         </div>
     </section>
@@ -655,17 +676,33 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                    <h5 class="modal-title" id="contactModalLabel"><b>Contact Information</b></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Email: <a href="mailto:1sayalimote@gmail.com">1sayalimote@gmail.com</a></p>
-                    <p>Phone: +353851659237</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/sayalisunilmote/" target="_blank">Sayali Mote</a></p>
-                </div>
-            </div>
-        </div>
+                    <!-- Contact Form Start -->
+<form action="sendmail.php" method="POST">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
     </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Send Message</button>
+    <div class="mb-3">
+        <label for="email" class="form-label"><b>or Call me on: 085-1659237</b></label>
+    </div>
+</form>
+
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/script.js"></script>

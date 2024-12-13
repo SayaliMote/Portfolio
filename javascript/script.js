@@ -1,13 +1,15 @@
-// Smooth scrolling for navbar links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
 
         // Get the target section to scroll to
         const target = document.querySelector(this.getAttribute('href'));
-        
-        // Scroll to the target section smoothly
-        target.scrollIntoView({ behavior: 'smooth' });
+
+        // Scroll to the target section smoothly with an offset
+        window.scrollTo({
+            top: target.offsetTop - document.querySelector('.navbar').offsetHeight,
+            behavior: 'smooth'
+        });
 
         // Collapse the navbar after clicking the link if it's displayed
         const navbarToggler = document.querySelector('.navbar-toggler');
@@ -18,6 +20,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
         }
     });
 });
+
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -105,4 +108,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function toggleInfo(element) {
+    const infoDiv = element.nextElementSibling; // Get the additional-info div
+    const video = infoDiv.querySelector('video'); // Get any video inside the info div
+
+    // Toggle the display and video playback
+    if (infoDiv.style.display === 'none') {
+        infoDiv.style.display = 'block';
+        if (video) {
+            video.play();
+        }
+    } else {
+        infoDiv.style.display = 'none';
+        if (video) {
+            video.pause();
+            video.currentTime = 0; // Optionally reset video to start
+        }
+    }
+}
 
