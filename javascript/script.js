@@ -128,3 +128,24 @@ function toggleInfo(element) {
     }
 }
 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission to allow modal handling
+
+    // Hide the contact modal
+    var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+    contactModal.hide();
+
+    // Show the thank you modal
+    var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+    thankYouModal.show();
+});
+
+function playVideo() {
+    // Toggle video container visibility when the card is clicked
+    var videoContainer = document.getElementById('videoContainer');
+    if (videoContainer.style.display === "none") {
+        videoContainer.style.display = "block";
+    } else {
+        videoContainer.style.display = "none";
+    }
+}
